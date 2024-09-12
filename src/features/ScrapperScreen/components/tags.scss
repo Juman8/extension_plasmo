@@ -1,0 +1,84 @@
+
+#inputTags {
+  padding: 10px 10px 10px 10px;
+  width: 330px;
+  background-color: white;
+  .rti--container {
+    padding: 10px;
+    border-radius: 4px;
+    width: 330px;
+    display: flex;
+    max-height: 600px;
+    flex-wrap:nowrap;
+    overflow: auto;
+  }
+  h1{
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  h2{
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .rti--tag_v {
+    font-size: 0.875rem;
+    background-color: rgb(210 241 241);
+    padding: 4px 10px 4px 10px;
+    white-space: nowrap;
+    margin-left: 4px;
+    height: 45px;
+    border-radius: 10%;
+  }
+  .rti--tag_v button {
+    background: none;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: inherit;
+    padding: 0 var(--rti-s);
+    margin-left: 8px;
+  }
+  .rti--tag_v button:hover {
+    color: red
+  }
+  .inputTagsValue{
+    width: 80px;
+    height: 45px;
+    box-sizing:border-box;
+  }
+
+  .inputTagsValue:hover {
+    border: 1px solid #F5F5F5;
+  }
+  .popup-container {
+    position: absolute;
+    display: block;
+    max-width: 200px;
+    max-height: 50px;
+    left: 30px;
+    top: 80px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 5px;
+    overflow: auto;
+    border: 1,
+    /* Các thuộc tính khác như background-color, border, box-shadow, v.v. */
+  }
+
+  .popup-container.active {
+    display: block;
+    background-color: white;
+  }
+
+  .suggestion-list li:hover {
+    background-color: #f0f0f0; /* Thay đổi màu nền khi hover vào */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi hover vào */
+  }
+  .suggestion-list li{
+    // word-wrap: ;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
